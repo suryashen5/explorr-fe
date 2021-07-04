@@ -18,7 +18,8 @@
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_gravity="center"
-            android:src="@color/black"
+            android:src="@drawable/dummy"
+            android:scaleType="centerCrop"
             tools:ignore="ContentDescription"
             android:background="@drawable/round_item_card_hotel"/>
 

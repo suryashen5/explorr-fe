@@ -186,7 +186,6 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="60dp"
-        style="@style/AppTheme"
         android:text="Submit Review"
         app:layout_constraintTop_toBottomOf="@+id/editText"
         tools:layout_editor_absoluteX="30dp" />

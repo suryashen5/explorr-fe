@@ -28,15 +28,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-    }
-
-    private fun setCategory(){
-        val categoryAdapter = HomeAdapter()
-        with(binding.rvReadyCategory){
-            layoutManager = LinearLayoutManager(context)
-            setHasFixedSize(true)
-            adapter = categoryAdapter
-        }
+        setPhoto()
     }
 
     private fun setPhoto(){

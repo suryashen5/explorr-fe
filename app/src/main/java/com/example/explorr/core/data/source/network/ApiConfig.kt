@@ -1,4 +1,4 @@
-package com.example.explorr.core.data.source.remote.network
+package com.example.explorr.core.data.source.network
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -16,7 +16,7 @@ object ApiConfig {
             .build()
     }
 
-    fun provideApiService(): ApiService {
+    fun geoService(): ApiService {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://api.mapbox.com/geocoding/v5/")
             .addConverterFactory(GsonConverterFactory.create())
@@ -24,5 +24,15 @@ object ApiConfig {
             .build()
         return retrofit.create(ApiService::class.java)
     }
+
+    fun listHotelServices(): ApiService {
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://explorr-api.herokuapp.com/api/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(provideOkHttpClient())
+            .build()
+        return retrofit.create(ApiService::class.java)
+    }
+
 
 }

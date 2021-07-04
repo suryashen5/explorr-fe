@@ -2,7 +2,7 @@ package com.example.explorr.explore
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import com.example.explorr.core.data.source.remote.network.ApiConfig
+import com.example.explorr.core.data.source.network.ApiConfig
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.channels.BroadcastChannel
@@ -23,8 +23,11 @@ class ExploreViewModel : ViewModel() {
             it.trim().isNotEmpty()
         }
         .mapLatest {
-            ApiConfig.provideApiService().getPlace(it, accessToken).features
+            ApiConfig.geoService().getPlace(it, accessToken).features
         }
         .asLiveData()
+
+    
+
 
 }

@@ -26,7 +26,8 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="223dp"
-            android:src="@color/black"
+            android:src="@drawable/dummy"
+            android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView

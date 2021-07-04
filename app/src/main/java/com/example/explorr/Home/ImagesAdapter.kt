@@ -3,10 +3,8 @@ package com.example.explorr.Home
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.explorr.core.data.source.remote.response.CategoryEntity
-import com.example.explorr.core.data.source.remote.response.Data
-import com.example.explorr.core.data.source.remote.response.PhotoEntity
-import com.example.explorr.databinding.ItemCategoryBinding
+import com.example.explorr.core.data.source.Data
+import com.example.explorr.core.data.source.PhotoEntity
 import com.example.explorr.databinding.ItemGridPhotoBinding
 
 class ImagesAdapter : RecyclerView.Adapter<ImagesAdapter.ImagesViewHolder>(){

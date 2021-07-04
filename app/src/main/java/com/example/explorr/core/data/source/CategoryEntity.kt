@@ -1,4 +1,4 @@
-package com.example.explorr.core.data.source.remote.response
+package com.example.explorr.core.data.source
 
 data class CategoryEntity (
     var hastagsName : String,

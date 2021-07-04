@@ -1,4 +1,4 @@
-package com.example.explorr.core.data.source.remote.network
+package com.example.explorr.core.data.source.network
 
 sealed class ApiResponse<out R> {
     data class Success<out T>(val data: T) : ApiResponse<T>()

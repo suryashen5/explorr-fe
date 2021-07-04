@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Explorr">
-        <activity android:name=".OrderPaymentActivity"></activity>
+        <activity android:name=".mood.MoodHotelActivity"></activity>
+        <activity android:name=".listhotel.ListHotelActivity" />
+        <activity android:name=".order.OrderPaymentActivity" />
         <activity android:name=".order.OrderPaymentActivity" />
         <activity android:name=".review.ReviewActivity" />
         <activity android:name=".transaction.TransactionActivity" />

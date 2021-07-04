@@ -1,4 +1,4 @@
-package com.example.explorr.core.data.source.local.entity
+package com.example.explorr.core.data.source
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
