@@ -153,9 +153,12 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_review"
-            android:layout_width="100dp"
-            android:layout_height="130dp"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            tools:listitem="@layout/item_review"
             app:layout_constraintEnd_toStartOf="@+id/guideline1"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintHorizontal_bias="0.005"
             android:layout_marginTop="28dp"
             app:layout_constrainedWidth="true"
@@ -176,9 +179,12 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_facility"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:layout_marginTop="20dp"
+            tools:listitem="@layout/item_facility"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constrainedWidth="true"
             app:layout_constraintEnd_toStartOf="@+id/guideline1"
             app:layout_constraintHorizontal_bias="0.0"
@@ -199,9 +205,11 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_rooms"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constrainedWidth="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_rooms"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="30dp"
             app:layout_constraintHorizontal_bias="0.0"

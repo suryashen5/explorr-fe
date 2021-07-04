@@ -25,7 +25,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginEnd="0dp"
                 android:text="@string/temp_review_name"
-                android:textSize="21sp" />
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -57,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15sp"
+            android:textSize="12sp"
             android:text="@string/temp_review_description" />
 
     </LinearLayout>

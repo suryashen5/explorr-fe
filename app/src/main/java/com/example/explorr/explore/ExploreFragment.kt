@@ -65,4 +65,9 @@ class ExploreFragment : Fragment() {
 
     }
 
+    companion object{
+        const val EXTRA_TAGS = "extra_tags"
+    }
+
+
 }

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".explore.ExploreFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -38,8 +44,10 @@
                 android:id="@+id/et_room"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:hint="1 room"
+                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/icon_bed"
                 app:layout_constraintTop_toBottomOf="@+id/ao_location" />
 
@@ -48,7 +56,9 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="28dp"
+                android:hint="1 night"
+                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/icon_moon"
                 app:layout_constraintTop_toBottomOf="@id/et_room" />
 
@@ -57,7 +67,9 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp"
+                android:hint="1 adult"
                 app:layout_constraintStart_toEndOf="@+id/icon_moon"
                 app:layout_constraintTop_toBottomOf="@id/et_night" />
 
@@ -66,7 +78,9 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
+                android:textSize="12sp"
+                android:hint="1 children"
                 app:layout_constraintStart_toEndOf="@+id/et_adult"
                 app:layout_constraintTop_toBottomOf="@id/et_night" />
 
@@ -74,8 +88,10 @@
                 android:id="@+id/et_date"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:hint="insert data"
+                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/icon_date"
                 app:layout_constraintTop_toBottomOf="@+id/ao_location" />
 
@@ -123,8 +139,8 @@
                 android:id="@+id/icon_date"
                 android:layout_width="26dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="23dp"
-                android:layout_marginTop="38dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="34dp"
                 android:src="@drawable/ic_date"
                 app:layout_constraintStart_toEndOf="@+id/et_room"
                 app:layout_constraintTop_toBottomOf="@+id/icon_location" />
@@ -136,11 +152,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_category"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
-        />
+        tools:listitem="@layout/item_category" />
 
     <TextView
         android:id="@+id/textView"
@@ -156,10 +175,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_hotels"
         android:layout_width="match_parent"
+        tools:listitem="@layout/item_card_hotel"
         android:layout_marginTop="26dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
