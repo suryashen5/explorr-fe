@@ -23,4 +23,23 @@
     <string name="temp_card_hotel_covid_19_protection">Covid-19 protection</string>
     <string name="temp_item_card_hotel_title">Favehotel Pluit Junction</string>
     <string name="temp_item_card_hotel_hashtag">#mntul #mntap #mntapjiwa #nightview #nature #nightview</string>
+    <string name="temp_item_order_payment_order_id">Order id : 000000001</string>
+    <string name="temp_item_order_payment_title">Favehotel Pluit Junction</string>
+    <string name="temp_item_order_payment_room">Single Deluxe Room</string>
+    <string name="temp_item_order_payment_quantity">x2</string>
+    <string name="temp_item_order_payment_check_in">Check In:</string>
+    <string name="temp_item_order_payment_04_juli_2021">04 Juli 2021</string>
+    <string name="temp_item_order_payment_check_out">Check Out:</string>
+    <string name="temp_item_order_payment_05_juli_2021">05 Juli 2021</string>
+    <string name="temp_item_order_payment_total_price">Total Price</string>
+    <string name="temp_item_order_payment_800_000">Rp 800.000</string>
+    <string name="temp_item_order_payment_payment_method">Payment Method</string>
+    <string name="temp_item_order_payment_bank_bca">Bank BCA</string>
+    <string name="temp_item_order_payment_virtual_number_number">Virtual Number :</string>
+    <string name="temp_item_order_payment_number">3876 0858 8282 6683</string>
+    <string name="temp_item_order_payment_copy">Copy</string>
+    <string name="temp_item_order_payment_check_payment">we will check your payment in 10 minutes after the payment succeed.</string>
+    <string name="temp_item_order_payment_finish_payment">Finish your payment to the Virtual Account before making new order to prevent changing the Virtual Account number. An Email confirmation will be sent to your email address for confirming the payment of our services\n\nWe only accept Bank BCA as the payment option.</string>
+    <string name="temp_item_order_payment_return_to_home">Return to Home</string>
+    <string name="temp_item_order_payment_by_using_our_services_you_have_agreed_to_explorr_s_terms_and_conditions_and_privacy_policy">By using our services, you have agreed to Explorr’s Terms and Conditions and Privacy Policy</string>
 </resources>
