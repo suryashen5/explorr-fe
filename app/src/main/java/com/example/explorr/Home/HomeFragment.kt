@@ -1,10 +1,11 @@
-package com.example.explorr
+package com.example.explorr.Home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.explorr.R
 
 class HomeFragment : Fragment() {
 

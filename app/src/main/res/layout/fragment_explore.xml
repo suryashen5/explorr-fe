@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ExploreFragment">
+    tools:context=".explore.ExploreFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -17,27 +17,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/et_location"
-                android:layout_width="170dp"
+            <AutoCompleteTextView
+                android:id="@+id/ao_location"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:layout_marginStart="12dp"
-                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                android:hint="enter place"
                 app:layout_constraintStart_toEndOf="@+id/icon_location"
                 app:layout_constraintTop_toTopOf="parent" />
+
 
             <EditText
                 android:id="@+id/et_room"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginStart="12dp"
                 app:layout_constraintStart_toEndOf="@+id/icon_bed"
-                app:layout_constraintTop_toBottomOf="@id/et_location" />
+                app:layout_constraintTop_toBottomOf="@+id/ao_location" />
 
             <EditText
                 android:id="@+id/et_night"
@@ -70,10 +74,10 @@
                 android:id="@+id/et_date"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginStart="12dp"
                 app:layout_constraintStart_toEndOf="@+id/icon_date"
-                app:layout_constraintTop_toBottomOf="@+id/et_location" />
+                app:layout_constraintTop_toBottomOf="@+id/ao_location" />
 
             <ImageView
                 android:id="@+id/icon_location"
