@@ -1,7 +1,8 @@
-package com.example.explorr
+package com.example.explorr.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.explorr.R
 
 class DetailHotelActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
