@@ -2,4 +2,25 @@
     <string name="app_name">Explorr</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temp_category_name">Wifi</string>
+    <string name="temp_facility_name">Wifi</string>
+    <string name="temp_review_description">The place is nice, the pool was clean. I love the nightview especially the bar. The service was nice, they quickly came when I call for room service and ask for help</string>
+    <string name="temp_review_name">Tania Hermandez</string>
+    <string name="temp_items_rooms_price">Rp 400.000</string>
+    <string name="temp_item_night_room">/ night / room</string>
+    <string name="temp_item_rooms_person">2 person</string>
+    <string name="temp_item_rooms_pax">1 pax</string>
+    <string name="temp_item_rooms_bed">1 single bed</string>
+    <string name="temp_item_rooms_title">Single Deluxe</string>
+    <string name="todo">TODO</string>
+    <string name="pesan">Pesan</string>
+    <string name="temp_item_review_score">5</string>
+    <string name="temp_item_card_hotel_price">Rp 400.000</string>
+    <string name="temp_items_card_hotel_night_room">/ night /room</string>
+    <string name="temp_item_hotel_start_from">start from</string>
+    <string name="temp_item_card_hotel_total_reviews">(523 reviews)</string>
+    <string name="items_temp_card_hotel_average_review">7.2</string>
+    <string name="temp_card_hotel_covid_19_protection">Covid-19 protection</string>
+    <string name="temp_item_card_hotel_title">Favehotel Pluit Junction</string>
+    <string name="temp_item_card_hotel_hashtag">#mntul #mntap #mntapjiwa #nightview #nature #nightview</string>
 </resources>
